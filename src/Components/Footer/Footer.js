@@ -3,27 +3,28 @@ import Facebook from "../Images/Facebook.png"
 import Instagram from "../Images/Instagram.png"
 import Twitter from "../Images/twitter.png"
 import Youtube from "../Images/youtube2.png"
+import {Footerhold, Image, Pic, Content, Copy} from "./FooterElement.js"
 
 function Footer() {
   return (
-    <div>
-      <div>
-        <img src={Facebook} />
-        <img src={Instagram} />
-        <img src={Twitter} />
-        <img src={Youtube} />
-      </div>
-      <div>
+    <Footerhold>
+      <Pic>
+        <Image src={Facebook} />
+        <Image src={Instagram} />
+        <Image src={Twitter} />
+        <Image src={Youtube} />
+      </Pic>
+      <Content>
         <p>need Help?</p>
         <p>Content guild</p>
         <p>privacy</p>
         <p>Terms of use</p>
         <p>Advert</p>
         <p>Jobs</p>
-      </div>
-      <div>C 2022</div>
-    </div>
+      </Content>
+      <Copy>Ajay@Copyright 2022</Copy>
+    </Footerhold>
   )
 }
 
-export default Footer
+export default Footer;
